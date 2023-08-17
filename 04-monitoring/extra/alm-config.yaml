@@ -20,7 +20,7 @@ spec:
           title: |
             {{/* Title of the Slack alert */}}
             {{ define "slack.title" -}}
-            [{{ .Status | upper -}}
+            [{{ .Status | toUpper -}}
             {{ if eq .Status "firing" }}:{{ .Alerts.Firing | len }}{{- end -}}
             ] {{ .CommonLabels.alertname }}
             {{- end }}
