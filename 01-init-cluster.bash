@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export $(xargs <../.env)
+export $(xargs <.env)
 
 cd "01-init"
 
