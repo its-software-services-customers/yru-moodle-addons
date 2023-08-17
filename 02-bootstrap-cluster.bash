@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export $(xargs .env)
+export $(xargs <.env)
 
 cd "02-bootstrap"
 
