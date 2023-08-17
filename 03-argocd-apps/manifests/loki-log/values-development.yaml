@@ -1,11 +1,11 @@
-domain: grafana-loki-np.epeagle-pharma.com
+domain: grafana-loki-np.chalam-kitchen.com
 
 loki-stack:
   grafana:
     grafana.ini:
       server:
-        root_url: grafana-loki-np.epeagle-pharma.com
+        root_url: grafana-loki-np.chalam-kitchen.com
     grafana.ini:
       server:
-        root_url: https://grafana-loki-np.epeagle-pharma.com
-        domain: grafana-loki-np.epeagle-pharma.com
+        root_url: https://grafana-loki-np.chalam-kitchen.com
+        domain: grafana-loki-np.chalam-kitchen.com
