@@ -1,0 +1,33 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: monitoring
+spec:
+  generators:
+  - clusters:
+      selector:
+        matchLabels:
+          custom: "true"
+  template:
+    metadata:
+      name: 'monitoring-{{name}}'
+    spec:
+      project: "default"
+      source:
+        repoURL: https://github.com/its-software-services-customers/yru-moodle-addons.git
+        targetRevision: "{{name}}" #Based on environment
+        path: '03-argocd-apps/manifests/monitoring'
+        helm:
+          ignoreMissingValueFiles: true
+          valueFiles:
+            - values.yaml
+            - values-{{name}}.yaml
+      destination:
+        name: in-cluster
+        namespace: monitoring
+      syncPolicy:
+        automated:
+          selfHeal: true
+          prune: true
+        syncOptions:
+          - CreateNamespace=true
