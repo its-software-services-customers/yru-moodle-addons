@@ -3,4 +3,4 @@
 export $(xargs <../.env)
 
 helm dependency update
-helm install . -f values-${ENV}.yaml
+helm install . -f values-${ENV}.yaml --generate-name
