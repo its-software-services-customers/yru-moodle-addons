@@ -1,5 +1,5 @@
 apiVersion: v2
-name: helm-prometheus
+name: helm-prometheus-chart
 version: 1.0.0
 appVersion: 1.23.0
 description: A Helm chart wrapper for Prometheus

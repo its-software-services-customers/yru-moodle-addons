@@ -1,2 +1,1 @@
-domain: promrub.cybertracx.com
-backendService: ingress-nginx-production-controller
+---
