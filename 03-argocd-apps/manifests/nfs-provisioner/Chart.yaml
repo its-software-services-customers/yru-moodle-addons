@@ -1,0 +1,11 @@
+apiVersion: v2
+name: helm-nfs-server-provisioner
+version: 1.0.0
+appVersion: 1.23.0
+description: A Helm chart wrapper for NFS Server
+
+dependencies:
+  - name: nfs-server-provisioner
+    version: "1.8.0"
+    repository: "https://kubernetes-sigs.github.io/nfs-ganesha-server-and-external-provisioner/"
+    condition: nfs-server-provisioner.enabled
