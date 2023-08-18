@@ -6,6 +6,6 @@ description: A Helm chart wrapper for Moodle
 
 dependencies:
   - name: moodle
-    version: "2.1.0"
+    version: "17.0.3"
     repository: "https://charts.bitnami.com/bitnami"
     condition: moodle.enabled
