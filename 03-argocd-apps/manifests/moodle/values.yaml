@@ -2,7 +2,10 @@ moodle:
   enabled: true
   fullnameOverride: moodle
   nameOverride: moodle
-  replicaCount: 1
+  replicaCount: 2
 
   service:
     type: ClusterIP
+
+  persistence:
+    existingClaim: nfs-claim
