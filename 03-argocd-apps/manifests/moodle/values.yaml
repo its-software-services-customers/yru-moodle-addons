@@ -14,3 +14,7 @@ phpmyadmin:
   enabled: true
   nameOverride: myadmin
   fullnameOverride: myadmin
+
+  extraEnvVars:
+    - name: LOG_LEVEL
+      value: DEBUG
