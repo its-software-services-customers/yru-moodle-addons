@@ -7,5 +7,5 @@ moodle:
   service:
     type: ClusterIP
 
-  persistence:
-    existingClaim: nfs-claim
+  #persistence:
+  #  existingClaim: nfs-claim
