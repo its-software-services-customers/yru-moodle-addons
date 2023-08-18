@@ -1,0 +1,5 @@
+moodle:
+  enabled: true
+  fullnameOverride: moodle
+  nameOverride: moodle
+  replicaCount: 1
