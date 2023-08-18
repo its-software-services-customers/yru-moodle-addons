@@ -9,3 +9,8 @@ moodle:
 
   #persistence:
   #  existingClaim: nfs-claim
+
+phpmyadmin:
+  enabled: true
+  nameOverride: myadmin
+  fullnameOverride: myadmin

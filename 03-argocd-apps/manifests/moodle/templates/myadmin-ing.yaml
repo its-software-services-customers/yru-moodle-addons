@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: myadmin-ing
+  annotations:
+    nginx.ingress.kubernetes.io/backend-protocol: HTTP
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  tls:
+    - hosts:
+      - {{ .Values.domain }}
+      secretName: myadmin-cert
+  rules:
+    - host: {{ .Values.domainMyAdmin }}
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: moodle
+                port:
+                  number: 80

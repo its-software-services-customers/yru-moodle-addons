@@ -9,3 +9,8 @@ dependencies:
     version: "17.0.3"
     repository: "https://charts.bitnami.com/bitnami"
     condition: moodle.enabled
+
+  - name: phpmyadmin
+    version: "12.0.2"
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: phpmyadmin.enabled
