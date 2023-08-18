@@ -3,3 +3,6 @@ moodle:
   fullnameOverride: moodle
   nameOverride: moodle
   replicaCount: 1
+
+  service:
+    type: ClusterIP
