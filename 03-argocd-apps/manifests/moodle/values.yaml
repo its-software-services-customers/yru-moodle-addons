@@ -18,6 +18,7 @@ moodle:
     host: moodle-mysql
     user: root
     existingSecret: mysql-credential
+    database: moodle
 
 phpmyadmin:
   enabled: true
