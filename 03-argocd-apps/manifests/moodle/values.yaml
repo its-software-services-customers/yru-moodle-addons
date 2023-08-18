@@ -10,6 +10,15 @@ moodle:
   #persistence:
   #  existingClaim: nfs-claim
 
+  mariadb:
+    enabled: false
+  
+  externalDatabase:
+    type: mysqli
+    host: moodle-mysql
+    user: root
+    existingSecret: mysql-credential
+
 phpmyadmin:
   enabled: true
   nameOverride: myadmin
