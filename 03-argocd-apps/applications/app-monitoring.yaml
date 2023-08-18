@@ -18,6 +18,7 @@ spec:
         targetRevision: "{{name}}" #Based on environment
         path: '03-argocd-apps/manifests/monitoring'
         helm:
+          skipCrds: true
           ignoreMissingValueFiles: true
           valueFiles:
             - values.yaml
