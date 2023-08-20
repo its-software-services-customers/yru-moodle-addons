@@ -3,6 +3,7 @@ kind: MariaDB
 metadata:
   name: mariadb
 spec:
+  size: 3
   rootPasswordSecretKeyRef:
     name: mysql-credential
     key: rootPassword
