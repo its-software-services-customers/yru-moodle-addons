@@ -1,6 +1,6 @@
 moodle:
   enabled: true
-  moodleSkipInstall: true
+  #moodleSkipInstall: true
   fullnameOverride: moodle
   nameOverride: moodle
   replicaCount: 1
