@@ -7,5 +7,5 @@ description: A Helm chart wrapper for MariaDB Operator
 dependencies:
   - name: mariadb-operator
     version: "0.19.0"
-    repository: "https://mariadb-operator.github.io/"
+    repository: "https://mariadb-operator.github.io/mariadb-operator"
     condition: mariadb-operator.enabled
