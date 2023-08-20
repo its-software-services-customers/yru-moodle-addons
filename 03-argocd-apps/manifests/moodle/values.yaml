@@ -19,7 +19,7 @@ moodle:
     host: mariadb
     user: root
     existingSecret: mysql-credential
-    database: moodle
+    database: mariadb #Use this DB name because Moodle created it at statup
 
 phpmyadmin:
   enabled: true
