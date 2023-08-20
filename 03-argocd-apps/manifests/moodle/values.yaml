@@ -14,8 +14,8 @@ moodle:
     enabled: false
   
   externalDatabase:
-    type: mariadb #mysqli
-    host: moodle-mysql
+    type: mariadb
+    host: mariadb
     user: root
     existingSecret: mysql-credential
     database: moodle
